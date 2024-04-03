@@ -1,0 +1,46 @@
+form {
+    background-color: #eaeaea;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+label {
+    float: left;
+    clear: left;
+    text-align: right;
+    padding-right: 10px;
+    margin-top: 10px;
+}
+
+input, textarea {
+    margin-top: 10px;
+    margin-left: 10px;
+    display: inline;
+}
+
+h1 {
+    color: blue;
+}
+
+select {
+    margin-top: 10px;
+}
+
+legend{
+    color: blue;
+    font-weight: bold;
+}
+
+fieldset{
+    margin-bottom: 30px;
+}
+
+#standard, #business, #suite, #king, #double  {
+    margin-top: 13px;
+}
+
+input[type="checkbox"] {
+    margin-top: 10px;
+    margin-left: 0; /* Change margin-left to align with other elements */
+    display: inline;
+}

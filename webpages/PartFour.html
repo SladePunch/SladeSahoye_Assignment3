@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Part 4: Validating a Form</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="/css/PartFour.css">
+        <script src="/js/PartFour.js"></script>
+    </head>
+
+    <body>
+        <h1>Reservation Request</h1><br>
+
+        <form id="reservationRequest" method="GET">
+        <fieldset>
+            <legend>General Information</legend>
+
+            <label>Arrival date&colon;</label>
+            <input type="text" name="date" id="date" placeholder="1/27/2023">
+            <span id="dateError" class="error"></span>
+            <br>
+
+            <label>Nights&colon;</label>
+            <input type="text" name="nights" id="nights" placeholder="2">
+            <span id="nightsError" class="error"></span>
+            <br>
+
+            <label>Adults&colon;</label>
+            <select id="adults" name="adults">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select><br>
+
+            <label>Children&colon;</label>
+            <select id="children" name="children">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+            </select><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferences</legend>
+
+            <label>Room type&colon;</label>
+            <input type="radio"  id="standard" name="roomType" value="Standard">Standard
+            <input type="radio" id="business" name="roomType" value="Business">Business 
+            <input type="radio" id="suite" name="roomType" value="Suite">Suite<br>
+
+            <label>Bed type&colon;</label>
+            <input type="radio" value="King" id="king" name="king">King
+            <input type="radio" value="Double Double" id="double" name="double">Double Double<br>
+            
+            <input type="checkbox" value="Smoking" id="smoking" name="smoking">Smoking
+        </fieldset>
+
+        <fieldset>
+            <legend>Contact Information</legend>
+
+            <label>Name&colon;</label>
+            <input type="text" name="name" id="name" placeholder="Anne Boehm">
+            <span id="nameError" class="error"></span>
+            <br>
+
+            <label>Email&colon;</label>
+            <input type="email" name="email" id="email" placeholder="anne@murach.com">
+            <span id="emailError" class="error"></span>
+            <br>
+
+            <label>Phone&colon;</label>
+            <input type="tel" name="phone" id="phone" placeholder="999-999-9999">
+            <span id="phoneError" class="error"></span>
+            <br>
+        </fieldset>
+
+        <p id="error" class="error"></p>
+    
+        <input type="submit" value="Submit Request" name="submit" id="submit"><br><br>
+    </form>
+
+    <footer>&copy Slade Sahoye | n01680074 | 2024</footer>
+
+    </body>
+</html>
